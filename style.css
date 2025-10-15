@@ -32,9 +32,9 @@ body {
 h1{
   font-family: "Space Mono", monospace;
   font-weight: 400;
-  font-size:200px;
+  font-size:175px;
   color:white;
-  line-height:200px;
+  line-height:170px;
 }
 h2{
   font-family: "Space Mono", monospace;
@@ -62,6 +62,7 @@ p{
   font-weight: 400;
   font-size:15px;
   color:white;
+  line-height:20px;
 }
 
 .center{
@@ -157,7 +158,7 @@ a.navbutton:hover{
 /********LANDING-PAGE************/
 .landingpage-titlebox{
   text-align: center;
-  margin-top:175px;
+  margin-top: 250px;
   font-style: italic;
   animation: fade-in 3s ease forwards;
   text-shadow: 0 0 30px white;
