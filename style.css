@@ -436,9 +436,9 @@ to {
   box-shadow: 0 0 50px 15px blue;
   animation: fadeOut 12s infinite; 
 }
-.page8-blueboxes:hover{
-/*   margin-top:500px; */
-}
+/* .page8-blueboxes:hover { 
+  margin-top:500px;
+} */
 .page8-blueboxes h3 {
   margin: 0; /* Reset margins */
 }
@@ -452,8 +452,7 @@ to {
     100% {
         opacity: 0;
     }
-}
-  animation: fadeIn1 1s ease; /* Apply animation */
+  /* animation: fadeIn1 1s ease; Apply animation */
 }
 .page3-content{
 /*   background-color:blue; */
