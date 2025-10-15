@@ -1,0 +1,545 @@
+body {
+  background-color: black;
+  margin-bottom:3%;
+  margin-left:3%;
+  margin-right:3%;
+}
+
+.space-mono-regular {
+  font-family: "Space Mono", monospace;
+  font-weight: 400;
+  font-style: normal;
+}
+::selection{
+  background-color:blue;
+  color:black;
+}
+.space-mono-regular-italic {
+  font-family: "Space Mono", monospace;
+  font-weight: 400;
+  font-style: italic;
+}
+.space-mono-bold {
+  font-family: "Space Mono", monospace;
+  font-weight: 700;
+  font-style: normal;
+}
+.space-mono-bold-italic {
+  font-family: "Space Mono", monospace;
+  font-weight: 700;
+  font-style: italic;
+}
+h1{
+  font-family: "Space Mono", monospace;
+  font-weight: 400;
+  font-size:200px;
+  color:white;
+  line-height:200px;
+}
+h2{
+  font-family: "Space Mono", monospace;
+  font-weight: 400;
+  font-size:57px;
+  color:white;
+  line-height:60px;
+}
+h3{
+  font-family: "Space Mono", monospace;
+  font-weight: 400;
+  font-size:45px;
+  line-height:65px;
+  color:white;
+}
+h4{
+  font-family: "Space Mono", monospace;
+  font-weight: 400;
+  font-size:20px;
+  line-height:20px;
+  color:white;
+}
+p{
+  font-family: "Space Mono", monospace;
+  font-weight: 400;
+  font-size:15px;
+  color:white;
+}
+
+.center{
+  text-align:center;
+  top:50%;
+  left:50%
+}
+
+
+
+
+/********STAR************/
+.star {
+  position: absolute;
+  background-color: white;
+  padding: 1px 1px;
+  border-radius: 50%;
+  pointer-events: auto;
+  z-index: -1;
+  animation: flash ease 7s infinite;
+}
+.star2 {
+  position: absolute;
+  background-color: white;
+  padding: 0.7px 0.7px;
+  border-radius: 50%;
+  pointer-events: auto;
+  z-index: -1;
+  opacity:80%;
+  animation: flash ease 4s infinite;
+}
+
+
+
+/********NAV************/
+.navbar1{
+  display: flex;
+  flex-direction:row;
+  justify-content:space-between;
+  margin-top:-10px;
+  position: fixed;
+  top: 0;
+  width:96%;
+  z-index:100;
+}
+.navbar2{
+  display: flex;
+  flex-direction:row;
+  justify-content:space-between;
+  margin-top:-10px;
+  position: fixed;
+  bottom: 0;
+  width:96%;
+  z-index:100;
+
+}
+a.nav{
+  color:white;
+  text-decoration:none;
+}
+a.nav:hover{
+  background-color:blue;
+}
+a.navbutton{
+  text-decoration:none;
+  color:white;
+  animation: flash 2s infinite;
+}
+a.navbutton:hover{
+  text-decoration:underline;
+  color:white;
+  text-decoration-thickness: 4px;
+}
+
+
+/********ANIMATION************/
+@keyframes flash {
+    0% {
+        opacity: 0;
+    }
+    50% {
+        opacity: 1;
+    }
+    100% {
+      opacity: 0;
+  }
+}
+
+
+
+
+
+/********LANDING-PAGE************/
+.landingpage-titlebox{
+  text-align: center;
+  margin-top:175px;
+  font-style: italic;
+  animation: fade-in 3s ease forwards;
+  text-shadow: 0 0 30px white;
+}
+
+
+/********Page1************/
+.page1-container {
+  display: flex;
+  flex-direction:column;
+  height: 90vh; 
+  justify-content: center; 
+  align-items: center; 
+  text-align: center; 
+  animation: fade-in 3s ease forwards;
+
+}
+.page1-textbox{
+  width: 50%; 
+} 
+
+/********Page2************/
+.page2-container {
+  margin-top: 350px;
+}
+
+.page2-blur {
+  text-align: center;
+  margin: 0px;
+  text-shadow: 0 0 30px white;
+  color: transparent;
+  animation: fade-in 1s ease forwards;
+  opacity: 0; /* Initially hide all lines */
+}
+
+.page2-text {
+  margin: 10px; 
+}
+
+@keyframes fade-in {
+  from {
+    text-shadow: 0 0 30px white;
+    color: transparent;
+    opacity: 0;
+  }
+  to {
+    text-shadow: 0 0 0px white;
+    color: white;
+    opacity: 1; /* Fade in gradually */
+  }
+}
+
+/* Adjust animation delays for each line */
+.page2-blur:nth-child(1) {
+  animation-delay: 2s;
+}
+
+.page2-blur:nth-child(2) {
+  animation-delay: 4s;
+}
+
+.page2-blur:nth-child(3) {
+  animation-delay: 6s;
+}
+.page2-blur:nth-child(4) {
+  animation-delay: 8s;
+}
+.page2-blur:nth-child(5) {
+  animation-delay: 10s;
+}
+
+
+
+
+
+.page3-numcontainer{
+  display: flex;
+  flex-wrap: wrap; 
+  gap: 40px; 
+  margin-top:150px;
+}
+.page3-num{
+  flex-basis:275px;
+  text-align:center;
+  height:90px;
+  opacity:15%;
+  animation: fadeIn 1s ease; /* Apply animation */
+}
+.page3-content{
+/*   background-color:blue; */
+  width:60%;
+/*   padding: 5px 5px; */
+  margin-top:80px;
+}
+@keyframes fadeIn {
+  0% {
+    opacity: 15%; /* Start with 15% opacity */
+  }
+  50% {
+    opacity: 100%; /* End with 100% opacity */
+  }
+  100%{
+     opacity: 15%; /* Start with 15% opacity */
+  }
+}
+.page3-num:nth-child(1) {
+  animation-delay: 0s; /* Delay the animation of the first element by 1 second */
+}
+.page3-num:nth-child(2) {
+  animation-delay: 1.5s; /* Delay the animation of the second element by 2 seconds */
+}
+.page3-num:nth-child(3) {
+  animation-delay: 3s; /* Delay the animation of the third element by 3 seconds */
+}
+.page3-num:nth-child(4) {
+  animation-delay: 4.5s; /* Delay the animation of the first element by 1 second */
+}
+.page3-num:nth-child(5) {
+  animation-delay: 6s; /* Delay the animation of the second element by 2 seconds */
+}
+.page3-num:nth-child(6) {
+  animation-delay: 7.5s; /* Delay the animation of the third element by 3 seconds */
+}
+.page3-num:nth-child(7) {
+  animation-delay: 9s; /* Delay the animation of the third element by 3 seconds */
+}
+.page3-num:nth-child(8) {
+  animation-delay: 10.5s; /* Delay the animation of the first element by 1 second */
+}
+.page3-num:nth-child(9) {
+  animation-delay: 12s; /* Delay the animation of the second element by 2 seconds */
+}
+.page3-num:nth-child(10) {
+  animation-delay: 13.5s; /* Delay the animation of the third element by 3 seconds */
+}
+
+/********Page4************/
+.page4-blueboxes{
+  background-color:blue;
+  width:50%;
+  height:65vh;
+  margin-top:100px;
+  padding:50px;
+  box-shadow: 0 0 50px 15px blue;
+}
+.page4-blueboxes h3 {
+  margin: 0; /* Reset margins */
+}
+.page4-text{
+    animation: appear 3s ease forwards; /* Apply animation */
+    opacity: 0%; /* Start with 15% opacity */
+
+}
+.page4-text:nth-child(1) {
+  animation-delay: 0s; /* Delay the animation of the first element by 1 second */
+}
+.page4-text:nth-child(2) {
+  animation-delay: 3s; /* Delay the animation of the second element by 2 seconds */
+}
+.page4-text:nth-child(3) {
+  animation-delay: 6s; /* Delay the animation of the third element by 3 seconds */
+}
+.page4-text:nth-child(4) {
+  animation-delay: 9s; /* Delay the animation of the first element by 1 second */
+}
+.page4-text:nth-child(5) {
+  animation-delay: 12s; /* Delay the animation of the second element by 2 seconds */
+}
+.page4-text:nth-child(6) {
+  animation-delay: 13s; /* Delay the animation of the second element by 2 seconds */
+}
+@keyframes appear {
+  0% {
+    opacity: 0%;
+  }
+  50% {
+    opacity: 100%; /* End with 100% opacity */
+  }
+  100%{
+     opacity: 30%; /* Start with 15% opacity */
+  }
+}
+/********Page5************/
+.page5-textbox {
+  margin-top: 100px;
+}
+.page5-text {
+  animation: appear2 2s ease forwards;
+  opacity: 0;
+}
+.page5-textbox h2 {
+  margin: 20px;
+}
+.page5-text h2:hover {
+  color: blue;
+}
+      .page5-text:nth-child(1) {
+        animation-delay: 0s;
+      }
+      .page5-text:nth-child(2) {
+        animation-delay: 2s;
+      }
+      .page5-text:nth-child(3) {
+        animation-delay: 4s;
+      }
+      .page5-text:nth-child(4) {
+        animation-delay: 6s; /* Changed from 5s to 6s */
+      }
+      .page5-text:nth-child(5) {
+        animation-delay: 8s; /* Changed from 8s to 8s */
+      }
+      .page5-text:nth-child(6) {
+        animation-delay: 10s;
+      }
+      .page5-text:nth-child(7) {
+        animation-delay: 12s;
+      }
+      @keyframes appear2 {
+        0% {
+          opacity: 0; /* Changed from 0% to 0 */
+        }
+        100% {
+          opacity: 1; /* Changed from 50% to 1 */
+        }
+      }
+
+/********Page6************/
+.page6-container {
+  height: 300px; /* Set the height of the container */
+  overflow: hidden; /* Hide overflow content */
+  position: relative; /* Positioning context for absolute positioning */
+  margin-top:300px;
+}
+
+.page6-content {
+  position: absolute; 
+  animation: scroll 15s linear infinite; /* Apply animation */
+}
+
+@keyframes scroll {
+  0% {
+    top: 80%; /* Start from the top */
+  }
+  100% {
+    top: -100%; /* Scroll to the top minus the container's height */
+  }
+}
+
+
+
+
+/********Page7************/
+.page7-text{
+  animation: zoom 3s forwards;
+}
+@keyframes zoom {
+from {
+      transform: scale(0); 
+      font-size: 24px; 
+    }
+to {
+      transform: scale(1);
+      font-size: 200px; 
+    }
+  }
+
+
+
+/********Page8************/
+.page8-blueboxes{
+  background-color:blue;
+  width:60%;
+  height:auto;
+  margin-top:100px;
+  padding:50px;
+  box-shadow: 0 0 50px 15px blue;
+  animation: fadeOut 12s infinite; 
+}
+.page8-blueboxes:hover{
+/*   margin-top:500px; */
+}
+.page8-blueboxes h3 {
+  margin: 0; /* Reset margins */
+}
+@keyframes fadeOut {
+    0% {
+        opacity: 0 ;
+    }
+    10% {
+        opacity: 1 ;
+    }
+    100% {
+        opacity: 0;
+    }
+}
+  animation: fadeIn1 1s ease; /* Apply animation */
+}
+.page3-content{
+/*   background-color:blue; */
+  width:60%;
+/*   padding: 5px 5px; */
+  margin-top:80px;
+}
+@keyframes fadeIn1 {
+  0% {
+    opacity: 15%; /* Start with 15% opacity */
+  }
+  50% {
+    opacity: 100%; /* End with 100% opacity */
+  }
+  100%{
+     opacity: 15%; /* Start with 15% opacity */
+  }
+}
+
+
+/********Page9************/
+.styled-marquee {
+    display: block; /* Display initially */
+    opacity: 0; /* Hide initially */
+    animation: fadeIn 1s ease forwards, moveUp 1s ease forwards;
+    transition: margin-top 1s ease; /* Transition for position */
+    margin-top:50px;
+
+}
+.marquee-text {
+  margin: 0;
+  font-size: 180px;
+  white-space: nowrap;
+}
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+.marquee1 {
+    animation-delay: 0s; /* No delay for the first line */
+}
+.marquee2 {
+    animation-delay: 2s; /* 1 second delay for the second line */
+}
+.marquee3 {
+    animation-delay: 4s; /* 2 seconds delay for the third line */
+}
+.marquee4 {
+    animation-delay: 6s; /* 3 seconds delay for the fourth line */
+}
+/********Page10************/
+.page10-text h1{
+  font-size:44px;
+  line-height:44px;
+  margin:0px;
+}
+.page10-text h2{
+  font-size:36px;
+  line-height:36px;
+  margin:0px;
+}
+.page10-text h3{
+  font-size:28px;
+  margin:0px;
+  line-height:28px;
+}
+.page10-text p{
+  font-size:20px;
+  margin:0px;
+  line-height:20px;
+}
+#mydiv, #mydiv2, #mydiv3, #mydiv4 {
+  position: absolute;
+  z-index: 1111;
+  text-align: center;
+  border: 1px solid white;
+}
+
+#mydivheader, #mydivheader2, #mydivheader3, #mydivheader4 {
+  padding: 10px;
+  cursor: pointer;  
+  z-index: 10;
+  color: white;
+}
+
